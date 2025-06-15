@@ -22,4 +22,19 @@ ref: [doc พี่ไมค์](https://docs.mikelopster.dev/c/basic/git/intro)
 
 ## Git server และคำสั่ง remote
 * หลังจาก cop remote ให้ใช้ ```git push --all  origin``` เพื่ออัพทุก branch ขึ้น github
-* ```git push <ตัวแปร> <branch>``` **ตัวอย่าง** ```git push origin main```
+* ```git clone <url git>``` 
+* ```git push <ตัวแปร> <branch ที่จะ push>``` **ตัวอย่าง** ```git push origin main```
+* ```git pull <ตัวแปร> <branch ที่จะ pull>``` **ตัวอย่าง** ```git pull origin main```
+* ```git fetch origin``` เอาไว้ดึงทุก branch ของ server มาลงเครื่ิง
+    * แต่ถ้าอยากได้แค่บาง branch ```git fetch <ตัวแปร> <branch>```
+
+## Hot to pull request
+* ในการทำงานจริงต้องทำ ```pull request``` แทนการ merge เข้า main แบบมั่วซั่ว
+* pull request เกิดจากการที่เราอัพงานขึ้น github จาก branch อื่น
+
+1. กดเข้าไป
+![alt text](./img/image-1.png)
+
+2. เช็คตรงนี้ให้ดี ถ้าเรียบร้อยดีก็กด ```create pull request```
+![alt text](./img/image-2.png)
+
